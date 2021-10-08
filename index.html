@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Yax | Software House Frontend Task</title>
+ <link rel="stylesheet" type="text/css" href="css/form.css" />
+ <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+
+ <section id="task-frontend">
+
+  <span class="basic-title">Dołącz do nas już teraz!</span>
+
+  <hr class="form-line"></hr>
+
+	<div class="form">
+		<form action="#" id="form" class="form-body">
+			<div id="error"></div>
+			<h1 class="form-title">Formularz rekrutacyjny</h1>
+			<div class="form-item">
+				<label for="formName" class="form-label">Imię:</label>
+				<input id="formName" type="text" name="name" required placeholder="Jak masz na imię?" class="form-input _req">
+			</div>
+			<div class="form-item">
+				<label for="formLastname" class="form-label">Nazwisko:</label>
+				<input id="formLastname" type="text" name="lastname" required placeholder="Jakie jest Twoje nazwisko?" class="form-input">
+			</div>
+			<div class="form-item">
+				<label for="formEmail" class="form-label">E-mail:</label>
+				<input id="formEmail" type="text" name="email" required placeholder="Napisz swój e-mail." class="form-input">
+			</div>
+			<div class="form-item form-sekcje">
+				<div class="form-label-sekcje"><span>Sekcje, które Cię inretesują:</span></div>
+				<div class="options">
+					<div class="options-item sekcje-right">
+						<input id="formFrontend" checked type="radio" value="frontend" name="sekcje" class="options-input">
+						<label for="formFrontend" class="options-label">frontend</label>
+						<input id="formBackend" type="radio" value="backend" name="sekcje" class="options-input">
+						<label for="formBackend" class="options-label">backend</label>
+					</div>
+					<div class="options-item sekcje-left">
+						<input id="formMobile" type="radio" value="mobile" name="sekcje" class="options-input">
+						<label for="formMobile" class="options-label">mobile</label>
+						<input id="formGrafika" type="radio" value="grafika" name="sekcje" class="options-input">
+						<label for="formGrafika" class="options-label">grafika</label>
+					</div>
+				</div>
+			</div>	
+			<div class="form-item plik">
+				<div class="file">
+					<div class="file-item">
+						<input id="formFile" accept=".pdf, .doc, .docx" type="file" name="file" class="file-input">
+						<div class="file-button">Dodaj plik CV</div>
+					</div>
+				</div>
+			</div>
+			<div class="checkbox">
+				<input id="" type="checkbox" name="checkbox" name="sekcje" class="options-input">
+			</div>
+			<button onclick="myFunction()" type="submit" class="form-button">Wyślij formularz</button>
+		</form>
+	</div>
+ </section>
+
+<!-- zaimportowanie pliku z kodem javascript, który dokona walidacji danych (zadanie JS) -->
+<script type="text/javascript" src="js/validation.js"></script>
+</body>
+</html>
